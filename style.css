@@ -135,14 +135,21 @@ p { margin: 0 0 1rem; }
   background: var(--ink);
   color: var(--cream);
 }
-.btn-whatsapp {
+.btn.btn-whatsapp {
   background: #25D366;
   color: #FFFFFF;
   border-color: #25D366;
+  gap: 0.5rem;
 }
-.btn-whatsapp:hover {
+.btn.btn-whatsapp svg {
+  width: 16px;
+  height: 16px;
+  fill: currentColor;
+}
+.btn.btn-whatsapp:hover {
   background: #1DA851;
   border-color: #1DA851;
+  color: #FFFFFF;
   transform: translateY(-1px);
   box-shadow: 0 8px 20px -6px rgba(37, 211, 102, 0.4);
 }
@@ -224,7 +231,7 @@ p { margin: 0 0 1rem; }
   margin-left: 0.2rem;
   color: var(--muted);
 }
-.dropdown {
+.nav-menu .dropdown {
   position: absolute;
   top: 100%;
   left: -1rem;
@@ -937,7 +944,7 @@ p { margin: 0 0 1rem; }
   .nav-menu.open { transform: translateX(0); }
   .nav-menu ul { flex-direction: column; gap: 1.25rem; }
   .nav-menu a { font-size: 1.15rem; }
-  .dropdown {
+  .nav-menu .dropdown {
     position: static;
     opacity: 1;
     visibility: visible;
