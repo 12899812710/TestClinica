@@ -1,1 +1,438 @@
-<html>Test for Ikigai Clinic</html>
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>IKIGAI Clínica Psicológica | Licda. Carmen Erazo</title>
+  <meta name="description" content="Clínica psicológica dirigida por la Licda. Carmen Erazo. Terapia con enfoque contextual para niños, adolescentes y adultos, en modalidad presencial y virtual." />
+
+  <!-- Google Fonts: Montserrat (brand), Dancing Script (accent), Archivo Black (display, Heavitas substitute) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Archivo+Black&family=Dancing+Script:wght@500;600&family=Montserrat:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,400&display=swap" rel="stylesheet" />
+
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- Top announcement bar -->
+  <div class="top-bar">
+    <p>Atención en modalidad presencial y virtual · San Salvador, El Salvador</p>
+  </div>
+
+  <!-- Navigation -->
+  <header class="site-header">
+    <div class="container nav-wrapper">
+      <a href="#inicio" class="logo" aria-label="IKIGAI Clínica Psicológica">
+        <!-- Inline SVG logo (icon + wordmark) -->
+        <svg class="logo-icon" viewBox="0 0 100 110" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+          <polygon points="50,4 92,12 90,30 48,22" fill="#B9A6C1"/>
+          <polygon points="8,40 94,48 92,66 6,58" fill="#B4DDCC"/>
+          <polygon points="22,74 66,82 64,100 20,92" fill="#E2C4CC"/>
+        </svg>
+        <span class="logo-text">
+          <span class="logo-word">/KIGAI</span>
+          <span class="logo-sub">Clínica Psicológica</span>
+        </span>
+      </a>
+
+      <nav class="nav-menu" id="navMenu" aria-label="Navegación principal">
+        <ul>
+          <li><a href="#inicio">Inicio</a></li>
+          <li><a href="#sobre-mi">Sobre Mí</a></li>
+          <li class="has-dropdown">
+            <a href="#servicios" aria-haspopup="true">Servicios <span class="caret">+</span></a>
+            <ul class="dropdown">
+              <li><a href="#terapia-individual">Terapia Individual</a></li>
+              <li><a href="#terapia-infantojuvenil">Terapia Infantojuvenil</a></li>
+              <li><a href="#terapia-pareja">Terapia de Pareja</a></li>
+            </ul>
+          </li>
+          <li><a href="#enfoque">Enfoque</a></li>
+          <li><a href="#contacto">Contacto</a></li>
+        </ul>
+      </nav>
+
+      <a href="#contacto" class="btn btn-primary btn-nav">Agenda tu cita</a>
+
+      <button class="menu-toggle" id="menuToggle" aria-label="Abrir menú" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <!-- Hero -->
+  <section class="hero" id="inicio">
+    <div class="hero-pattern" aria-hidden="true"></div>
+    <div class="container hero-grid">
+      <div class="hero-content">
+        <p class="eyebrow">Licda. Carmen Erazo · Psicóloga Clínica</p>
+        <h1 class="hero-title">
+          Un espacio para construir <span class="script-accent">una vida</span> que valga la pena ser vivida.
+        </h1>
+        <p class="hero-sub">
+          Terapia psicológica con enfoque contextual para niños, adolescentes y adultos. Un lugar seguro, libre de juicios, donde puedas expresarte con total libertad.
+        </p>
+        <div class="hero-ctas">
+          <a href="#contacto" class="btn btn-primary">Agenda tu cita</a>
+          <a href="#enfoque" class="btn btn-ghost">Conoce mi enfoque</a>
+        </div>
+      </div>
+      <div class="hero-image-wrap">
+        <div class="hero-image-frame">
+          <img
+            src="https://images.unsplash.com/photo-1559839734-2b71ea197ec2?w=900&q=80"
+            alt="Psicóloga en consulta, ambiente cálido y profesional"
+            loading="eager"
+          />
+        </div>
+        <div class="hero-badge">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+            <path d="M12 2L14.39 8.26L21 9.27L16 14.14L17.18 21L12 17.77L6.82 21L8 14.14L3 9.27L9.61 8.26L12 2Z"/>
+          </svg>
+          <div>
+            <strong>Maestría en curso</strong>
+            <span>Terapias de Tercera Generación</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Values strip (replaces "as seen in") -->
+  <section class="values-strip">
+    <div class="container">
+      <p class="strip-label">Mi compromiso contigo</p>
+      <div class="values-list">
+        <span>Compasión</span>
+        <span class="dot" aria-hidden="true"></span>
+        <span>Empatía</span>
+        <span class="dot" aria-hidden="true"></span>
+        <span>Comprensión</span>
+        <span class="dot" aria-hidden="true"></span>
+        <span>Asertividad</span>
+        <span class="dot" aria-hidden="true"></span>
+        <span>Acompañamiento</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- Card grid (six sections) -->
+  <section class="card-grid-section">
+    <div class="container">
+      <div class="card-grid">
+        <a href="#sobre-mi" class="card card-tall">
+          <div class="card-image" style="background-image: url('https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?w=700&q=80');"></div>
+          <div class="card-label"><span>Sobre Mí</span></div>
+        </a>
+        <a href="#servicios" class="card">
+          <div class="card-image" style="background-image: url('https://images.unsplash.com/photo-1544027993-37dbfe43562a?w=700&q=80');"></div>
+          <div class="card-label"><span>Servicios</span></div>
+        </a>
+        <a href="#enfoque" class="card">
+          <div class="card-image" style="background-image: url('https://images.unsplash.com/photo-1519682337058-a94d519337bc?w=700&q=80');"></div>
+          <div class="card-label"><span>Enfoque Terapéutico</span></div>
+        </a>
+        <a href="#faq" class="card">
+          <div class="card-image" style="background-image: url('https://images.unsplash.com/photo-1499209974431-9dddcece7f88?w=700&q=80');"></div>
+          <div class="card-label"><span>Preguntas Frecuentes</span></div>
+        </a>
+        <a href="#modalidades" class="card">
+          <div class="card-image" style="background-image: url('https://images.unsplash.com/photo-1587614382346-4ec70e388b28?w=700&q=80');"></div>
+          <div class="card-label"><span>Modalidades</span></div>
+        </a>
+        <a href="#contacto" class="card">
+          <div class="card-image" style="background-image: url('https://images.unsplash.com/photo-1486312338219-ce68d2c6f44d?w=700&q=80');"></div>
+          <div class="card-label"><span>Contacto</span></div>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- About -->
+  <section class="about" id="sobre-mi">
+    <div class="container about-grid">
+      <div class="about-image">
+        <img src="https://images.unsplash.com/photo-1594824476967-48c8b964273f?w=800&q=80" alt="Licda. Carmen Erazo, psicóloga clínica" />
+        <div class="about-pattern" aria-hidden="true"></div>
+      </div>
+      <div class="about-content">
+        <p class="eyebrow">Sobre la clínica</p>
+        <h2>Licda. Carmen Erazo</h2>
+        <p class="lede">
+          Fundadora de IKIGAI Clínica Psicológica. Dedicada a la psicología clínica desde sus primeros años como profesional, con experiencia inicial en la atención a niños con autismo.
+        </p>
+        <p>
+          Fundé esta clínica en el año 2020, motivada por el deseo de crear un entorno seguro y libre de juicios donde cada persona pueda expresarse plenamente. Mi visión es sostener un lugar que fomente la compasión, donde los consultantes se sientan cómodos para compartir sus problemas y encontrar su propio camino interior.
+        </p>
+        <p>
+          Actualmente curso una maestría en terapias de tercera generación, comprometida con la formación continua para ofrecer un acompañamiento más efectivo a cada paciente.
+        </p>
+        <div class="credentials">
+          <div>
+            <strong>Desde</strong>
+            <span>2020</span>
+          </div>
+          <div>
+            <strong>Formación</strong>
+            <span>Maestría en curso</span>
+          </div>
+          <div>
+            <strong>Atención</strong>
+            <span>Niños, adolescentes y adultos</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Enfoque / Therapeutic approach -->
+  <section class="approach" id="enfoque">
+    <div class="container">
+      <div class="approach-header">
+        <p class="eyebrow">Enfoque Terapéutico</p>
+        <h2>Terapias de tercera generación</h2>
+        <p class="approach-lede">
+          Un modelo conductual-contextual que acompaña a la persona en la construcción de una vida más plena, flexible y coherente con sus valores personales.
+        </p>
+      </div>
+      <div class="approach-pillars">
+        <article class="pillar">
+          <div class="pillar-icon" aria-hidden="true">
+            <svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M24 8c-5 0-9 4-9 9v4c-2 1-3 3-3 5s1 4 3 5v5c0 3 2 4 4 4h10c2 0 4-1 4-4v-5c2-1 3-3 3-5s-1-4-3-5v-4c0-5-4-9-9-9z"/>
+              <path d="M18 20h12M18 26h12"/>
+            </svg>
+          </div>
+          <h3>Aceptación</h3>
+          <p>Desarrollar una relación más saludable con tus pensamientos y emociones, sin necesidad de eliminarlos ni evitarlos.</p>
+        </article>
+        <article class="pillar">
+          <div class="pillar-icon" aria-hidden="true">
+            <svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+              <circle cx="24" cy="24" r="6"/>
+              <circle cx="24" cy="24" r="14"/>
+              <path d="M24 4v6M24 38v6M4 24h6M38 24h6"/>
+            </svg>
+          </div>
+          <h3>Atención Plena</h3>
+          <p>Cultivar la capacidad de observar el momento presente con apertura, curiosidad y sin juicio.</p>
+        </article>
+        <article class="pillar">
+          <div class="pillar-icon" aria-hidden="true">
+            <svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M24 6L30 18L42 20L33 29L35 42L24 36L13 42L15 29L6 20L18 18L24 6z"/>
+            </svg>
+          </div>
+          <h3>Acción Comprometida</h3>
+          <p>Dar pasos intencionales hacia aquello que te resulta significativo, aunque se presente la incomodidad.</p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- Services -->
+  <section class="services" id="servicios">
+    <div class="container">
+      <div class="section-head">
+        <p class="eyebrow">Servicios</p>
+        <h2>Áreas de atención</h2>
+      </div>
+      <div class="service-cards">
+        <article class="service-card" id="terapia-individual">
+          <div class="service-icon" aria-hidden="true">
+            <svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+              <circle cx="24" cy="16" r="7"/>
+              <path d="M10 40c0-7 6-13 14-13s14 6 14 13"/>
+            </svg>
+          </div>
+          <h3>Terapia Individual</h3>
+          <p>Un proceso colaborativo para adultos, centrado en tus necesidades y objetivos personales. Trabajamos juntos el manejo de la ansiedad, depresión, estrés, autoestima, duelo y transiciones de vida.</p>
+          <a href="#contacto" class="service-link">Agendar consulta</a>
+        </article>
+        <article class="service-card" id="terapia-infantojuvenil">
+          <div class="service-icon" aria-hidden="true">
+            <svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M16 16h6v-6h4v6h6v4h-6v6h-4v-6h-6z"/>
+              <path d="M14 28h20M14 34h14"/>
+              <rect x="8" y="6" width="32" height="36" rx="4"/>
+            </svg>
+          </div>
+          <h3>Terapia Infantojuvenil</h3>
+          <p>Apoyo y cuidado integral para el bienestar de niños y adolescentes, en un ambiente seguro donde puedan expresarse libremente y desarrollar sus herramientas emocionales.</p>
+          <a href="#contacto" class="service-link">Agendar consulta</a>
+        </article>
+        <article class="service-card" id="terapia-pareja">
+          <div class="service-icon" aria-hidden="true">
+            <svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M24 42s-14-8-14-20a8 8 0 0114-5 8 8 0 0114 5c0 12-14 20-14 20z"/>
+            </svg>
+          </div>
+          <h3>Terapia de Pareja</h3>
+          <p>Un enfoque integral para mejorar la comunicación, resolver conflictos y fortalecer el vínculo emocional, fomentando un entorno de comprensión y crecimiento mutuo.</p>
+          <a href="#contacto" class="service-link">Agendar consulta</a>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- Slogan quote -->
+  <section class="slogan">
+    <div class="container slogan-wrap">
+      <span class="slogan-mark" aria-hidden="true">"</span>
+      <blockquote>
+        <p>Hacer que la <span class="script-accent">vida</span> valga la pena ser vivida.</p>
+        <cite>— Marsha Linehan</cite>
+      </blockquote>
+    </div>
+  </section>
+
+  <!-- Modalities -->
+  <section class="modalities" id="modalidades">
+    <div class="container">
+      <div class="section-head">
+        <p class="eyebrow">Modalidades</p>
+        <h2>Dos formas de recibir tu terapia</h2>
+      </div>
+      <div class="modality-row">
+        <div class="modality">
+          <div class="mod-number">01</div>
+          <h3>Presencial</h3>
+          <p>Sesiones en nuestro consultorio en San Salvador, en un espacio cálido diseñado para favorecer la confianza y la apertura.</p>
+        </div>
+        <div class="modality">
+          <div class="mod-number">02</div>
+          <h3>Virtual</h3>
+          <p>Sesiones por videollamada para quienes prefieren recibir acompañamiento desde la comodidad de su hogar, con la misma calidad y cercanía.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FAQ -->
+  <section class="faq" id="faq">
+    <div class="container">
+      <div class="section-head">
+        <p class="eyebrow">Preguntas Frecuentes</p>
+        <h2>Respuestas para comenzar</h2>
+      </div>
+      <div class="faq-list">
+        <details>
+          <summary>¿Cómo es la primera consulta?</summary>
+          <p>La primera sesión es un espacio de evaluación donde conversamos sobre tu situación, tus inquietudes y tus objetivos. A partir de esta información, diseñamos juntos un plan terapéutico adaptado a tus necesidades.</p>
+        </details>
+        <details>
+          <summary>¿Cuánto dura una sesión?</summary>
+          <p>Cada sesión tiene una duración aproximada de 50 minutos. La frecuencia suele ser semanal al inicio, y se ajusta según el avance del proceso.</p>
+        </details>
+        <details>
+          <summary>¿Qué son las terapias de tercera generación?</summary>
+          <p>Son enfoques contextuales como ACT (Terapia de Aceptación y Compromiso) y DBT (Terapia Dialéctico-Conductual). Buscan que desarrolles una relación más flexible con tus pensamientos y emociones, y que construyas una vida alineada con tus valores.</p>
+        </details>
+        <details>
+          <summary>¿Las sesiones son confidenciales?</summary>
+          <p>Sí, la confidencialidad es un principio ético fundamental. Todo lo compartido en sesión se mantiene dentro del espacio terapéutico, salvo las excepciones que establece el código de ética profesional.</p>
+        </details>
+        <details>
+          <summary>¿Atiendes a niños y adolescentes?</summary>
+          <p>Sí, cuento con experiencia en atención infantojuvenil. El proceso incluye espacios con los padres o cuidadores para favorecer el acompañamiento integral del menor.</p>
+        </details>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact -->
+  <section class="contact" id="contacto">
+    <div class="container contact-grid">
+      <div class="contact-content">
+        <p class="eyebrow">Contacto</p>
+        <h2>Comencemos tu proceso</h2>
+        <p>Si sientes que este es el momento de dar el primer paso, escríbeme. Te responderé para coordinar una primera consulta y resolver cualquier duda que tengas.</p>
+        <ul class="contact-list">
+          <li>
+            <strong>Ubicación</strong>
+            <span>San Salvador, El Salvador</span>
+          </li>
+          <li>
+            <strong>Modalidad</strong>
+            <span>Presencial y virtual</span>
+          </li>
+          <li>
+            <strong>Correo</strong>
+            <span><a href="mailto:contacto@ikigai.clinic">contacto@ikigai.clinic</a></span>
+          </li>
+        </ul>
+      </div>
+      <form class="contact-form" onsubmit="event.preventDefault(); alert('Formulario de demostración. Conectar con un servicio de envío (Formspree, EmailJS, etc).');">
+        <div class="field">
+          <label for="nombre">Nombre</label>
+          <input type="text" id="nombre" name="nombre" required />
+        </div>
+        <div class="field">
+          <label for="email">Correo electrónico</label>
+          <input type="email" id="email" name="email" required />
+        </div>
+        <div class="field">
+          <label for="servicio">Servicio de interés</label>
+          <select id="servicio" name="servicio">
+            <option>Terapia Individual</option>
+            <option>Terapia Infantojuvenil</option>
+            <option>Terapia de Pareja</option>
+            <option>Otra consulta</option>
+          </select>
+        </div>
+        <div class="field">
+          <label for="mensaje">Mensaje</label>
+          <textarea id="mensaje" name="mensaje" rows="4"></textarea>
+        </div>
+        <button type="submit" class="btn btn-primary">Enviar mensaje</button>
+      </form>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="site-footer">
+    <div class="container footer-grid">
+      <div class="footer-brand">
+        <svg class="logo-icon logo-icon-dark" viewBox="0 0 100 110" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+          <polygon points="50,4 92,12 90,30 48,22" fill="#B9A6C1"/>
+          <polygon points="8,40 94,48 92,66 6,58" fill="#B4DDCC"/>
+          <polygon points="22,74 66,82 64,100 20,92" fill="#E2C4CC"/>
+        </svg>
+        <p class="footer-brand-name">/KIGAI <span>Clínica Psicológica</span></p>
+        <p class="footer-tagline">Hacer que la vida valga la pena ser vivida.</p>
+      </div>
+      <div class="footer-col">
+        <h4>Navegación</h4>
+        <ul>
+          <li><a href="#sobre-mi">Sobre Mí</a></li>
+          <li><a href="#servicios">Servicios</a></li>
+          <li><a href="#enfoque">Enfoque</a></li>
+          <li><a href="#faq">FAQ</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Servicios</h4>
+        <ul>
+          <li><a href="#terapia-individual">Terapia Individual</a></li>
+          <li><a href="#terapia-infantojuvenil">Terapia Infantojuvenil</a></li>
+          <li><a href="#terapia-pareja">Terapia de Pareja</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Contacto</h4>
+        <ul>
+          <li>San Salvador, El Salvador</li>
+          <li><a href="mailto:contacto@ikigai.clinic">contacto@ikigai.clinic</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="container footer-legal">
+      <p>© <span id="year"></span> IKIGAI Clínica Psicológica. Todos los derechos reservados.</p>
+      <p>Licda. Carmen Erazo · Psicóloga Clínica</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
